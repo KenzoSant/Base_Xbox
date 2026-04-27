@@ -1,5 +1,7 @@
 # Projeto Xbox Game Pass - Análise de Vendas e Assinaturas
 
+<img width="1480" height="738" alt="Captura de tela 2026-04-27 202146" src="https://github.com/user-attachments/assets/d7868a0d-b099-4c40-bf62-d6c1b1e13595" />
+
 ## Visão Geral
 
 Este projeto tem como objetivo analisar os dados de assinantes do **Xbox Game Pass**, incluindo informações sobre planos, tipos de assinatura, renovação automática, adesão a add-ons (EA Play e Minecraft Season Pass), uso de cupons e receita gerada. Os dados estão organizados em uma planilha Excel com múltiplas abas, contendo desde a base bruta de assinantes até cálculos agregados e um dashboard visual.
@@ -41,26 +43,3 @@ O arquivo `Base_Xbox.xlsx` contém as seguintes abas:
   - Minecraft Season Pass: 194 assinantes (receita 3.880)
   - EA Play Season Pass: 98 assinantes (receita 2.940)
 - **Uso de cupons**: 2.122 no total, com destaque para o plano Standard (1.079)
-
-## Instruções para Reprodução
-
-### Pré-requisitos
-
-- Microsoft Excel (2016 ou superior) ou LibreOffice Calc.
-- Python (opcional, para automação de análise com `pandas` e `openpyxl`).
-
-### Passo a passo
-
-1. **Baixar o arquivo**  
-   - Salve o arquivo `Base_Xbox.xlsx` no seu computador.
-
-2. **Exploração manual (Excel)**  
-   - Abra o arquivo no Excel.
-   - Navegue pelas abas `Bases`, `Calculos` e `Dashboard`.
-   - Na aba `Calculos`, verifique as tabelas dinâmicas e somas automáticas.
-
-3. **Reprodução dos cálculos (Excel)**  
-   - Na aba `Bases`, você pode criar novas tabelas dinâmicas ou usar fórmulas como `SOMASE`, `CONT.SE`, `SOMARPRODUTO` para replicar os totais da aba `Calculos`.  
-   - Exemplo:  
-     ```excel
-     =SOMASE(Plan; "Ultimate"; Total Value)
